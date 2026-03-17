@@ -10,12 +10,14 @@ const Countries = ({ countriesPromise }) => {
 
     const handleVisitedCountries = (country) => {
         console.log('handle visited country clicked', country);
+        const newVisitedCountries = [...visitedCountries, country];
+        setVisitedCountries(newVisitedCountries);
     }
 
     return (
         <div >
             <h1>in the coutries {countries.length}</h1>
-            <h3>Total country visited</h3>
+            <h3>Total country visited {visitedCountries.length}</h3>
             <div id='countries'>
                 {/* <Country></Country> */}
                 {
