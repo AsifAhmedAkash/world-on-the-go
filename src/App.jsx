@@ -11,7 +11,7 @@ function App() {
       <section id="center">
 
         <div>
-          <h1>React World on the go...</h1>
+          <h1>React world flag on the go...</h1>
           <Suspense fallback={<p>Nadir vai loading..</p>}>
             <Countries countriesPromise={countriesPromise}></Countries>
           </Suspense>
